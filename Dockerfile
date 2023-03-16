@@ -1,5 +1,7 @@
 FROM ubuntu:22.04
 
+ADD get_arch /get_arch
+
 RUN apt-get -y update && \
     apt-get -y install git && \
     apt-get -y install golang && \
@@ -10,3 +12,8 @@ RUN apt-get -y update && \
     apt-get -y install wget && \
     apt-get -y install vim && \
     apt-get clean
+
+RUN ln -s /usr/lib/jvm/java-17-openjdk-$(/get_arch) /usr/lib/jvm/java-17-openjdk
+
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+
