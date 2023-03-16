@@ -1,4 +1,4 @@
-FROM gcr.io/cloud-marketplace/google/ubuntu2004:latest
+FROM ubuntu:22.04
 
 RUN apt-get -y update && \
     apt-get -y install git && \
