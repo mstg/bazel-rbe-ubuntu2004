@@ -4,7 +4,7 @@ RUN apt-get -y update && \
     apt-get -y install git && \
     apt-get -y install golang && \
     apt-get -y install openjdk-17-jdk openjdk-17-jre openjdk-17-jdk-headless && \
-    apt-get -y install clang-14 libstdc++-11-dev && \
+    apt-get -y install clang clang-14 libstdc++-11-dev lld && \
     apt-get -y install unzip zip && \
     apt-get -y install python3 && \
     apt-get -y install wget && \
