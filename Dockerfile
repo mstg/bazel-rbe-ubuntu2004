@@ -9,7 +9,7 @@ RUN apt-get -y update && \
     apt-get -y install clang-15 libc++-15-dev libc++abi-15-dev llvm-15 lld-15 libunwind-15-dev && \
     apt-get -y install unzip zip && \
     apt-get -y install python3 && \
-    apt-get -y install wget && \
+    apt-get -y install wget curl && \
     apt-get -y install vim && \
     apt-get clean
 
