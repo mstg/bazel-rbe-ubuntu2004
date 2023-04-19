@@ -11,6 +11,7 @@ RUN apt-get -y update && \
     apt-get -y install python3 && \
     apt-get -y install wget curl && \
     apt-get -y install vim && \
+    apt-get -y install rpm && \
     apt-get clean
 
 RUN ln -s /usr/lib/jvm/java-17-openjdk-$(/get_arch) /usr/lib/jvm/java-17-openjdk
