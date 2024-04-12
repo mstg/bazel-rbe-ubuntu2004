@@ -18,3 +18,5 @@ RUN ln -s /usr/lib/jvm/java-17-openjdk-$(/get_arch) /usr/lib/jvm/java-17-openjdk
 
 ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 
+COPY --from=ghcr.io/tracemachina/nativelink:q352rkiy66n6azx5vy314y4dr5sb1pgy /nix/store/605ri6dw46iskqlzqn6qrllncr5aq0z4-nativelink-0.3.0/bin/nativelink /usr/bin/nativelink
+
